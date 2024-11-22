@@ -5,8 +5,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Post("cadastro")
-  PostCadastro(): string {
-    return this.appService.createCadastro();
+  @Get("")
+  GetInicio(): string {
+    return this.appService.Home();
   }
 }
